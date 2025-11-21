@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Travel</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover; /* Makes image cover entire screen */
+        }
+
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #e3f2fd; /* Soft pastel blue */
+            padding: 15px 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #0077b6;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #0077b6;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #023e8a;
+        }
+
+        /* Search bar styling */
+        .search-bar {
+            display: flex;
+            gap: 10px;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 8px 12px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            outline: none;
+            width: 180px;
+        }
+
+        .search-bar button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 20px;
+            background-color: #90e0ef; /* Soft aqua */
+            color: #023e8a;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .search-bar button:hover {
+            background-color: #48cae4;
+            color: white;
+        }
+
+        /* Introduction section */
+        
+ /* Intro box - aligned to the LEFT */
+ .intro {
+            /* left-side placement */
+            max-width: 720px;                 /* width of the whole box */
+            margin: 110px 30px 30px 30px;     /* space from top, right, bottom, left */
+            padding: 32px;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 14px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+            backdrop-filter: blur(2px);
+            text-align: left;                 /* ensure text is left-aligned */
+        }
+        .intro h1 {
+            font-size: 2.2rem;
+            color: #0077b6;
+            margin-bottom: 14px;
+        }
+        .intro p {
+            font-size: 1.12rem;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 16px;
+        }
+        .intro .cta {
+            margin-top: 10px;
+        }
+        .cta .btn-primary {
+            background-color: var(--accent-blue);
+            color: #fff;
+        }
+        .cta .btn-primary:hover {
+            background-color: var(--accent-dark);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <!-- Website name and logo on the left -->
+        <div class="logo">
+            <img src="logo.png" alt="Website Logo">
+            Smart Travel
+        </div>
+
+        <!-- Navigation links in the center -->
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <!-- Search bar on the right -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search recommendations...">
+            <button type="button">Search</button>
+            <button type="reset">Clear</button>
+        </div>
+    </nav>
+
+    <!-- Introduction Section -->
+    <section class="intro">
+        
+        <div class="intro-text">
+            <h1>Welcome to Smart Travel</h1>
+            <p>Your ultimate guide to discovering amazing destinations around the world. 
+            Whether you're looking for serene beaches, bustling cities, or hidden gems, 
+            we provide personalized recommendations to make your travel unforgettable.</p>
+        </div>
+    </section>
+</body>
+</html>
